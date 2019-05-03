@@ -24,14 +24,5 @@ public class TextInput {
         return this;
     }
 
-    public TextInput numberInput (String number){
-        this.element.clear();
-        this.element.sendKeys(String.valueOf(number));
-        return this;
-    }
-
-    public String read(){
-       return this.element.getText();
-    }
 }
 

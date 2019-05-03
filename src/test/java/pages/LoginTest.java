@@ -1,22 +1,18 @@
 package pages;
 
+import addins.Snapshot;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import ru.yandex.qatools.ashot.AShot;
-import ru.yandex.qatools.ashot.Screenshot;
-import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
-import javax.imageio.ImageIO;
-import java.io.File;
 import java.util.concurrent.TimeUnit;
 
-public class Test {
+public class LoginTest {
 
-    RemoteWebDriver driver;
+    private RemoteWebDriver driver;
 
     @BeforeClass
     public static void beforeAll() {
@@ -24,13 +20,14 @@ public class Test {
     }
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
     }
 
     @After
-    public void tearDown() throws Exception {
+    public void tearDown() {
         if (driver != null) {
             driver.quit();
         }
@@ -47,8 +44,8 @@ public class Test {
                     .clickLoginButton()
                     .isLoginRequestFailed();
         } finally {
-            Screenshot screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
-            ImageIO.write(screenshot.getImage(), "PNG", new File(System.getProperty("user.dir") + "/ErrorScreenshots/FullPageScreenshot.png"));
+            Snapshot snapshot = new Snapshot(driver, "Screenshots");
+            snapshot.takeSnapshot("Unsucessful login attempt");
         }
     }
 
@@ -63,9 +60,10 @@ public class Test {
                     .clickRegisterButton()
                     .isUserRegistered();
         } finally {
-            Screenshot screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
-            ImageIO.write(screenshot.getImage(), "PNG", new File(System.getProperty("user.dir") + "/ErrorScreenshots/FullPageScreenshot.png"));
+            Snapshot snapshot = new Snapshot(driver, "Screenshots");
+            snapshot.takeSnapshot("Registration Confirmation");
         }
     }
+
 }
 

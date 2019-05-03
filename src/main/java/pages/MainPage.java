@@ -6,7 +6,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class MainPage {
 
-    RemoteWebDriver driver;
+    private RemoteWebDriver driver;
     private Button logInButton;
     private By loginButtonSelector = By.xpath("//a[@class='btn btn-sm btn-link text-white']");
     private Button registerButton;
@@ -32,6 +32,4 @@ public class MainPage {
         registerButton.click();
         return new RegisterPage(driver);
     }
-
-
 }

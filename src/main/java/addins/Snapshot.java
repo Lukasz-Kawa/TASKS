@@ -1,13 +1,9 @@
 package addins;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import ru.yandex.qatools.ashot.AShot;
-import ru.yandex.qatools.ashot.Screenshot;
-import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
-import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 
@@ -21,11 +17,10 @@ public class Snapshot {
         this.baseDir = baseDir;
     }
 
-    public void takeFullPageSnapshot(String filename) throws IOException {
-        Screenshot screenshot = new AShot()
-                .shootingStrategy(ShootingStrategies.viewportPasting(1000))
-                .takeScreenshot(driver);
-        ImageIO.write(screenshot.getImage(), "PNG", new File(filePath(filename)));
+    public void takeSnapshot(String filename) throws IOException {
+        File source = driver.getScreenshotAs(OutputType.FILE);
+        File destination = new File(filePath(filename));
+        FileUtils.copyFile(source, destination);
     }
 
     private String filePath(String filename) {
