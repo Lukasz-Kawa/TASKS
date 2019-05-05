@@ -23,15 +23,8 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6c9b80f-3c7c-4339-8b5d-218e412eb2eb" name="Default Changelist" comment="Added Snaphot class to make screenshots after each test case, deleted unused method in Label and TextInput Class.Changed name of the Test class, added snaphot in each test case in try block. Added dependency in the pom file. Code cleanup.">
+    <list default="true" id="d6c9b80f-3c7c-4339-8b5d-218e412eb2eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/addins/Snapshot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/addins/Snapshot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/elements/Label.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/elements/Label.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/elements/Select.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/elements/TextInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/elements/TextInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -67,7 +60,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="26" />
+          <entry key="java" value="27" />
           <entry key="png" value="4" />
           <entry key="properties" value="1" />
           <entry key="xml" value="1" />
@@ -77,7 +70,7 @@
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="Image" value="4" />
-          <entry key="JAVA" value="26" />
+          <entry key="JAVA" value="27" />
           <entry key="Properties" value="1" />
           <entry key="XML" value="1" />
         </counts>
@@ -103,8 +96,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/LoginTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+            <state relative-caret-position="705">
+              <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -247,7 +240,7 @@
     <property name="GO_FMT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556916895791" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557087823031" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -359,8 +352,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556649705132</updated>
-      <workItem from="1556649710061" duration="18928000" />
+      <workItem from="1556649710061" duration="19833000" />
     </task>
+    <task id="LOCAL-00001" summary="Added Snaphot class to make screenshots after each test case, deleted unused method in Label and TextInput Class.Changed name of the Test class, added snaphot in each test case in try block. Added dependency in the pom file. Code cleanup.">
+      <created>1556917047182</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1556917047182</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -396,10 +397,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18928000" />
+    <option name="totallyTimeSpent" value="19833000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="984" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -443,8 +445,11 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Added Snaphot class to make screenshots after each test case, deleted unused method in Label and TextInput Class.Changed name of the Test class, added snaphot in each test case in try block. Added dependency in the pom file. Code cleanup." />
     <option name="LAST_COMMIT_MESSAGE" value="Added Snaphot class to make screenshots after each test case, deleted unused method in Label and TextInput Class.Changed name of the Test class, added snaphot in each test case in try block. Added dependency in the pom file. Code cleanup." />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/lukaszkawa/App.java">
@@ -515,17 +520,6 @@
     <entry file="file://$PROJECT_DIR$/Screenshots/Screenshots.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/addins/Snapshot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#894#895#0" expanded="true" />
-            <element signature="e#979#980#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/RegisterPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
@@ -572,10 +566,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/addins/Snapshot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/LoginTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        <state relative-caret-position="705">
+          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
