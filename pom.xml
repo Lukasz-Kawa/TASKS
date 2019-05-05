@@ -84,10 +84,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <configuration>
-          <testSourceDirectory>${basedir}/src/main/java/</testSourceDirectory>
-          <testClassesDirectory>${project.build.directory}/classes/</testClassesDirectory>
-        </configuration>
+        <version>3.0.0-M3</version>
       </plugin>
     </plugins>
   </build>
