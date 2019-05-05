@@ -44,7 +44,7 @@ public class LoginTest {
                     .clickLoginButton()
                     .isLoginRequestFailed();
         } finally {
-            Snapshot snapshot = new Snapshot(driver, "Screenshots");
+            Snapshot snapshot = new Snapshot(driver, "src/test/Screenshots");
             snapshot.takeSnapshot("Unsucessful login attempt");
         }
     }
@@ -60,7 +60,7 @@ public class LoginTest {
                     .clickRegisterButton()
                     .isUserRegistered();
         } finally {
-            Snapshot snapshot = new Snapshot(driver, "Screenshots");
+            Snapshot snapshot = new Snapshot(driver, "src/test/Screenshots");
             snapshot.takeSnapshot("Registration Confirmation");
         }
     }
