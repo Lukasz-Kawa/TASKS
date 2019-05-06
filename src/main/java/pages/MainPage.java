@@ -17,7 +17,7 @@ public class MainPage {
     }
 
     public MainPage navigateTo() {
-        driver.get("http://trello.com/");
+        driver.get("http://trello.com/pl");
         return new MainPage(driver);
     }
 
